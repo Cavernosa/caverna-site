@@ -1,18 +1,61 @@
 <html>
 	<head>
-<style>
-img:hover {
-	filter: invert(100%);
-}
-</style>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
-	<body style="background-image: url(miku.png); background-size: 5rem;">
-		<div style="display:flex; justify-content: center; align-items:center;height: 100%; flex-direction: column;"> 
-			<p style="">caverna</p>
-			<div style="display: flex; flex-direction: row;"> 
-					<a href="https://codeberg.org/Cavernosa"><img src="codeberg.png" alt="codeberg logo" style="width: 2rem; margin-right: 0.5rem;"></a>
-					<a href="https://github.com/Cavernosa"><img src="github.png" style="width: 2rem;"></a>
+	<body>
+		<section>
+			<div class=flex style="gap: 4rem;">
+				<img alt class=avatar src="cavernosa-pfp.png" width=200 height=200>
+				<div class="flex flex-column">
+					<h1>CavernosaSpider</h1>
+					<div class="flex">
+						<a href="https://codeberg.org/Cavernosa" style="filter: invert();"><img src="codeberg.png" alt="codeberg logo" style="width: 2rem; margin-right: 0.5rem;"></a>
+						<a href="https://github.com/Cavernosa" style="filter: invert();"><img src="github.png" alt="github logo" style="width: 2rem; margin-right: 0.5rem;"></a>
+						<img src="discord.svg" alt="discord logo. shows username cavernosaspider" title="cavernosaspider" style="filter: invert(); width: 2rem;">
+					</div>
+				</div>
+		</section>
+		<section>
+			<h2 style="text-align: center;">Projects</h2>
+			<div class="flex flex-column">
+				<div class="flex item-container">
+					<div class=crop>
+						<img style="margin-top: -4rem;" src="wikitext-vim.png">
+					</div>
+					<div class="description-container">
+						<h3><a href="https://codeberg.org/Cavernosa/wikitext.vim">wikitext.vim</a></h3>
+						<p>Wikitext/Mediawiki syntax highlighting for Vim.</p>
+					</div>
+				</div>
+				<div class="flex item-container">
+					<div class=crop>
+						<img style="" src="waid.png">
+					</div>
+					<div class="description-container">
+						<h3><a href="https://codeberg.org/Cavernosa/fwaid">Wiki Article Images Downloader</a></h3>
+						<p>Script that downloads all the uncompressed images in a wiki article.
+					</div>
+				</div>
+				<div class="flex item-container">
+					<div class=crop>
+						<img style="margin-left: -2.5rem; margin-top: -1rem;" src="emptymenu.png" width="400">
+					</div>
+					<div class="description-container">
+						<h3><a href="https://github.com/Cavernosa/HollowKnight.EmptyMenu">HollowKnight.EmptyMenu</a></h3>
+						<p>Simple mod that adds an empty menu/screen for full appreciation of the menu styles in Hollow Knight.</p>
+					</div>
+				</div>
+				<div class="flex item-container">
+					<div class=crop>
+						<img style="margin-top: -10rem;" src="gordura-simulator.png">
+					</div>
+					<div class="description-container">
+						<h3><a href="https://github.com/Cavernosa/Gordura_Simulator">Gordura Simulator</a></h3>
+						<p>A game about fat made in Python 3.</p>
+					</div>
+				</div>
 			</div>
-		</div>
+			
+		</section>
 	</body>
 </html>
