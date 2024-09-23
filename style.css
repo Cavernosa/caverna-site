@@ -21,11 +21,11 @@ body {
 
 section {
 	border-radius: 1rem;
-	border: 5px solid #300;
-	filter: drop-shadow(5px 10px);
+	border: 5px solid #733f3f;
+	filter: drop-shadow(10px 15px);
 	background: #201626;
 	padding: 1rem;
-	margin: 1rem;
+	margin: 2rem;
 
 }
 
