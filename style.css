@@ -37,6 +37,15 @@ header {
 	border-radius: 50%;
 }
 
+.profile-link-img {
+	transition: filter 0.5s;
+}
+
+.profile-link-img:hover {
+	filter: invert(50%);
+
+}
+
 h1 {
 	color: white;
 	font-family: Romantic;
