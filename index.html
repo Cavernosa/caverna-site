@@ -1,27 +1,36 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
 		<section>
-			<div class=flex style="gap: 4rem;">
+			<header class=flex>
 				<img alt class=avatar src="cavernosa-pfp.png" width=200 height=200>
 				<div class="flex flex-column">
 					<h1>CavernosaSpider</h1>
-					<div class="flex">
-						<a href="https://codeberg.org/Cavernosa" style="filter: invert();"><img src="codeberg.png" alt="codeberg logo" style="width: 2rem; margin-right: 0.5rem;"></a>
-						<a href="https://github.com/Cavernosa" style="filter: invert();"><img src="github.png" alt="github logo" style="width: 2rem; margin-right: 0.5rem;"></a>
-						<img src="discord.svg" alt="discord logo" style="filter: invert(); width: 2rem;"> <p style="display:inline; margin: 6px 5px">cavernosaspider</p>
-						<img src="email-icon.png" alt="email icon" style="width: 2rem; filter: invert();"> <img src="caverna-email.png" style="display:inline; margin: 10px 5px; width: 119px; height: 13px;">
+					<div class="flex links-bar">
+						<div class="flex profile-links">
+							<a href="https://codeberg.org/Cavernosa" style="filter: invert();"><img src="codeberg.png" alt="codeberg logo" style="width: 2rem; margin-right: 0.5rem;"></a>
+							<a href="https://github.com/Cavernosa" style="filter: invert();"><img src="github.png" alt="github logo" style="width: 2rem; margin-right: 0.5rem;"></a>
+						</div>
+						<div class="discord flex">
+							<img src="discord.svg" alt="discord logo" style="filter: invert(); width: 2rem;"> <p style="display:inline; margin: 6px 5px">cavernosaspider</p>
+						</div>
+						<div class="email-link flex">
+							<img src="email-icon.png" alt="email icon" style="width: 2rem; filter: invert();"> <img src="caverna-email.png" style="display:inline; margin: 10px 5px; width: 119px; height: 13px;">
+						</div>
 					</div>
 				</div>
+			</header>
 		</section>
 		<section>
 			<h2 style="text-align: center;">Projects</h2>
 			<div class="flex flex-column">
 				<div class="flex item-container">
 					<div class=crop>
-						<img style="margin-top: -4rem;" src="wikitext-vim.png">
+						<img class="crop-img" id="mediawiki-vim" src="wikitext-vim.png">
 					</div>
 					<div class="description-container">
 						<h3><a href="https://codeberg.org/Cavernosa/wikitext.vim">wikitext.vim</a></h3>
@@ -30,7 +39,7 @@
 				</div>
 				<div class="flex item-container">
 					<div class=crop>
-						<img style="" src="waid.png">
+						<img class="crop-img" id="waid" src="waid.png">
 					</div>
 					<div class="description-container">
 						<h3><a href="https://codeberg.org/Cavernosa/fwaid">Wiki Article Images Downloader</a></h3>
@@ -39,7 +48,7 @@
 				</div>
 				<div class="flex item-container">
 					<div class=crop>
-						<img style="margin-left: -2.5rem; margin-top: -1rem;" src="emptymenu.png" width="400">
+						<img class="crop-img" id="emptymenu" src="emptymenu.png" width="400">
 					</div>
 					<div class="description-container">
 						<h3><a href="https://github.com/Cavernosa/HollowKnight.EmptyMenu">HollowKnight.EmptyMenu</a></h3>
@@ -48,7 +57,7 @@
 				</div>
 				<div class="flex item-container">
 					<div class=crop>
-						<img style="margin-top: -10rem;" src="gordura-simulator.png">
+						<img class="crop-img" id="gordura-simulator" src="gordura-simulator.png">
 					</div>
 					<div class="description-container">
 						<h3><a href="https://github.com/Cavernosa/Gordura_Simulator">Gordura Simulator</a></h3>

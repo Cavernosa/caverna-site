@@ -25,8 +25,12 @@ section {
 	filter: drop-shadow(10px 15px);
 	background: #201626;
 	padding: 1rem;
-	margin: 2rem;
+	margin: 5vmin;
 
+}
+
+header {
+	gap: 4rem;
 }
 
 .avatar {
@@ -54,6 +58,7 @@ h3 {
 	font-size: 2rem;
 	margin-top: 0;
 	margin-bottom: 0;
+	overflow-wrap: break-word;
 }
 
 a {
@@ -88,4 +93,86 @@ p {
 .description-container {
 	flex-shrink: 99999999999999;
 }	
+
+#gordura-simulator {
+	margin-top: -10rem;
+}
+
+#emptymenu {
+	margin-left: -2.5rem; 
+	margin-top: -1rem;
+}
+
+#mediawiki-vim {
+	margin-top: -4rem;
+}
 	
+@media screen and (max-width: 824px) {
+	#mediawiki-vim {
+		margin-top: 0;
+	}
+	#gordura-simulator {
+		margin-top: 0;
+	}
+	#emptymenu {
+		margin-left: -4.5rem;
+	}
+	.item-container{
+		flex-direction: column-reverse;
+		text-align: center;
+		gap: 0;
+	}
+	.item-container:not(:last-child){
+		margin-bottom: 3rem;
+	}
+	.crop {
+		width: auto;
+		height: 35vmin;
+	}	
+	.crop-img {
+		width: 100vmin;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.avatar {
+		width: 50%;
+		height: 50%;
+		margin: auto;
+		
+	}
+	header {
+		flex-direction: column;
+		gap: 0;
+		text-align: center;
+	}
+	h1 {
+		margin-top: 1rem;
+		font-size: 13vmin;
+	}
+	.links-bar {
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 515px) {
+	.links-bar {
+		flex-direction: column;
+		margin: auto;
+	}
+	.profile-links, .discord, .email-link {
+		margin: auto;
+	}
+
+}
+
+@media screen and (max-width: 372px) {
+	body {
+		margin: 0;
+	}
+	section {
+		margin: 0 0 1rem;
+		filter: drop-shadow(5px 10px);
+	}
+}
